@@ -49,7 +49,6 @@ class JitoJsonRpcSDK:
             "params": [params]
         }
 
-    print(data)
     try:
       resp = requests.post(self.url + endpoint, headers=headers, json=data)
       resp.raise_for_status()
